@@ -1,0 +1,10 @@
+# Only TS-Files should be pushed -> No compiled files
+*.js
+*.map
+
+# Exclude libs
+node_modules/
+typings/
+
+# Exclude project files
+.idea
