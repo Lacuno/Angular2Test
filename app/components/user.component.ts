@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    template: '<h1>User</h1>'
+    templateUrl: '/app/components/user.html'
 })
 export class UserComponent {
 

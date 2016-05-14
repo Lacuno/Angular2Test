@@ -1,7 +1,16 @@
-<div>
-    <h1>Tournament App</h1>
-    <nav>
-        <a [routerLink]="['/user']">Test</a>
-    </nav>
-    <router-outlet></router-outlet>
-</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Tournament App</a>
+        </div>
+
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/user']">User</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</nav>
+<router-outlet></router-outlet>
