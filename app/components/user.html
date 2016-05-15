@@ -1,1 +1,38 @@
-<h1>User {{user.username}}</h1>
+<h1>User preferences</h1>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="id" class="col-sm-2 control-label">Id:</label>
+        <div class="col-sm-10">
+            <input id="id" class="form-control" [(ngModel)]="user.id">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="username" class="col-sm-2 control-label">Username:</label>
+        <div class="col-sm-10">
+            <input id="username" class="form-control" [(ngModel)]="user.username">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Gender:</label>
+        <div class="col-sm-10">
+            <div class="btn-group">
+                <label class="btn btn-primary" btnRadio="male" [(ngModel)]="user.gender">Male</label>
+                <label class="btn btn-primary" btnRadio="female" [(ngModel)]="user.gender">Female</label>
+            </div>
+            <!-- TODO: When radio elements are supported by ng2 use standard checkboxes instead of ng2-bootstrap workaround -->
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">Firstname:</label>
+        <div class="col-sm-10">
+            <input id="firstname" class="form-control" [(ngModel)]="user.firstname">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">Lastname:</label>
+        <div class="col-sm-10">
+            <input id="lastname" class="form-control" [(ngModel)]="user.lastname">
+        </div>
+    </div>
+</form>

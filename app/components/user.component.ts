@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RouteSegment } from '@angular/router';
 import { User, Gender} from '../model/user.model';
+import { ButtonRadioDirective } from 'ng2-bootstrap/ng2-bootstrap';
 
 @Component({
-    templateUrl: '/app/components/user.html'
+    templateUrl: '/app/components/user.html',
+    directives: [ButtonRadioDirective]
 })
 export class UserComponent {
     user: User;
